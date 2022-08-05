@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Deymıl</title>
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-dark navbar-expand fixed-top">
+
+        <div class="container">
+            <a href="#Deymıl" class="navbar-brand">Deymıl</a>
+
+             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#series" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        DİZİ
+                    </a>
+
+                        <ul class="dropdown-menu">
+                                <li><a href="#horror" class="dropdown-item">Korku</a></li>
+                                <li><a href="#romantic" class="dropdown-item">Romantik</a></li>
+                                <li><a href="#sciencefiction" class="dropdown-item">Bilim-Kurgu</a></li>
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#login" class="nav-link" data-bs-toggle="offcanvas" 
+                        data-bs-target="#login">Giriş Yap</a>
+                    
+                </li>
+
+                <li class="nav-item">
+                    <a href="#signup" class="nav-link" data-bs-toggle="offcanvas" 
+                    data-bs-target="#signup">Üye Ol</a>
+                </li>
+            </ul>
+
+            </div>
+        </nav>
+    
+    <div id="login" class="offcanvas offcanvas-start bg-warning">
+
+            <div class="offcanvas-header">
+                <h4 class="offcanvas-title">Giriş Yap</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                    <input type="password" class="form-control" placeholder="password" aria-label="Username">
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <div id="signup" class="offcanvas offcanvas-start bg-warning">
+
+            <div class="offcanvas-header">
+                <h4 class="offcanvas-title">Üye Ol</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="password" aria-label="password">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="tel" class="form-control" placeholder="phone number" aria-label="tel">
+                </div>
+            <div class="offcanvas-footer" id="submit">
+                <button type="submit" class="btn btn-danger" data-bs-target="#signup" data-bs-toggle="offcanvas">Üye Ol</button>
+            </div>
+                
+                
+            </div>
+        </div>
+    
+    
+
+
+    <div id="kitap" class="bg-warning" >
+        <div class="row">
+
+            <span class="col-4 mt-5" id="bookone">
+                <a href="#content" class="btn btn-sm" data-bs-toggle="collapse">
+                    <img id="book" src="assets/0000621999.jpg" alt="küçük prens">
+                </a> 
+                
+                <div id="content" class="collapse col-10">
+                    <div class="card card-body">
+                        Kitabın Konusu
+                        Yazarın uçağı birdenbire bozulur ve Sahra Çölü'ne iniş yapmak zorunda kalır. 
+                        Çölde Küçük Prens ile karşılaşır. Küçük Prens yazara yaşadığı yeri, yaşadığı maceraları anlatmaya başlar. 
+                        Anlattığına göre o, B-612 asteroidinde tek başına yaşayan bir prenstir. Gezegeninde çok sevdiği bir güle özenle bakar. 
+                        Gülüne nasıl daha faydalı olabileceğinin yollarını araştırmak istediği için diğer gezegenleri gezmek zorunda kalmıştır.
+                        <br>
+                        Kralın gezegeninde otorite tutkusunu, sanatçının gezegeninde kendini beğenmişliği, sarhoşun gezegeninde saplantıyı, 
+                        iş adamının gezegeninde amaçsız sahip olma tutkusunu, fenercinin gezegeninde öğrenmeden ve değişmeden emir yerine getirmeyi, 
+                        coğrafyacının gezegeninde ise elitizmi görür. Küçük Prens hepsinden mutsuz ayrılır. Gezdiği son gezegen ise Dünya'dır. Dünya,
+                         diğerlerinden farklı olarak büyük ve kalabalık bir gezegendir. İnsanların kendi değerlerinden daha çok, giysileriyle anlam 
+                         ve değer kazandıkları bir yerdir.
+                    </div>
+                </div>
+            </span>        
+
+            <span class="col-4 mt-5" id="booktwo">
+                <a href="#content2" class="btn btn-sm" data-bs-toggle="collapse">
+                    <img id="book" src="assets/0001907573.jpg" alt="simyacı"></a>
+                </a>
+
+                <div id="content2" class="collapse col-10">
+                    <div class="card card-body">
+                        Kitabın konusu
+                        Kitap, İspanya’dan kalkıp 
+                        Mısır Piramitleri'nin eteklerinde hazinesini aramaya gelen Endülüslü 
+                        çoban Santiago’nun masalsı yaşamının felsefi öyküsüdür.
+                    </div>
+                </div>
+            </span>   
+            
+            <span class="col-4 mt-5" id="bookthree">
+                <a href="#content3" class="btn btn-sm" data-bs-toggle="collapse">
+                    <img id="book" src="assets/0002098763.jpg" alt="benkirke"></a>
+                </a>
+
+                <div id="content3" class="collapse col-10">
+                    <div class="card card-body">
+                        Kitabın konusu
+                        Ozanlar benden, –erkek– kahramanın karşısında diz çöküp merhamet dilenen bir kadın olarak bahsetti hep;     
+                        ilaç katarmışım tatlı şaraplarına, büyüleyip domuza çevirirmişim hızlı giden gemilerin tayfasını, 
+                        babaevini unutturur, sılaya kavuşmalarına müsaade etmezmişim. Ne demeli, kadınlara haddini bildirmek 
+                        ozanların en sevdiği vakit geçirme biçimidir; yerlerde sürünüp ağlamazsak gerçek bir hikâye olmazmış gibi.
+                        Ama yanılıyorlar, yanılıyorsunuz: Cadılık illa nefret, kıskançlık ya da başka türlü bir kötülükten doğmaz; 
+                        ben ilk büyümü aşkımdan yapmıştım.
+                        Ben, Helios’un kızı, Aiaie Cadısı Kirke. Hayatım boyunca trajedinin beni bulmasını bekledim. Bulacağından hiç kuşkum yoktu
+                        çünkü başkalarının hak ettiğimi düşündüğünden daha fazla arzum, isyanım ve gücüm vardı, yıldırımları üstüne çekecek şeylerdi bunlar.
+                        Ve bir gün, artık bu dünyaya dayanamayacağım, diye düşündüm.
+                        Bunun üzerine denizin derinliklerindeki kadim bir tanrı seslendi: Öyleyse çocuğum, başka bir dünya yap.
+                        <br>
+                        Ben, Kirke’de Madeline Miller; Odysseus, İkaros, Minotauros, Prometheus ve Zeus gibi mitolojik karakterlerin binlerce yıldır
+                        anlatılagelen hikâyesini farklı bir bakış açısından sunmakla kalmayıp Olymposlu tanrıların dünyasını Homeros’un destansılığında aktarmayı başarıyor.
+                    </div>
+                </div>
+            </span>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="movie">
+
+        <div class="card mb-3 bg-black">
+
+        <div class="row g-0 mt-2" id="box1">
+
+            <div class="col-md-5">
+                <img id="pic" src="assets/lucy.jpg" class="img-fluid rounded-start" alt="lucy">
+            </div>
+    
+        <div class="col-md-7">
+            <div id="text" class="card-body card-body">
+                <h5 class="card-title">LUCY <br><br></h5>
+                <p3 class="card-text" >Lucy , şirketi EuropaCorp için Luc Besson tarafından yazılıp yönetilen ve 
+                    eşi Virginie Besson-Silla tarafından üretilen 2014 İngilizce Fransız bilim kurgu aksiyon filmidir. 
+                    Taipei , Paris ve New York'ta çekilen İngilizce bir filmdir. Başrollerinde Scarlett Johansson , Morgan Freeman , 
+                    Choi Min-sik ve Amr Waked var . Johansson, nootropik , psychedelic olduğunda psikokinetik yeteneklerkazanan
+                    bir kadın olan itibari karakteri canlandırıyor.ilaç kan dolaşımına emilir.
+                    <br><br>
+                    Film 25 Temmuz 2014'te vizyona girdi ve büyük bir gişe başarısı elde etti, 463 milyon 
+                    doların üzerinde hasılat elde etti, yani 39 milyon dolarlık bütçenin on bir katından fazla
+                    hasılat elde etti. Genel olarak olumlu ama aynı zamanda kutuplaşmış, eleştirel eleştiriler aldı.
+                    Her ne kadar temaları, görselleri ve Johansson'ın performansı için övgüde bulunulsa da, birçok eleştirmen arsayı
+                    saçma buldu, özellikle de beyin mitinin yüzde onuna ve ortaya çıkan yeteneklere odaklanması.
+                    <br><br>
+                    Lucy, Taipei, Tayvan'da okuyan bir Amerikalıdır ve yeni erkek arkadaşı Richard tarafından Güney Koreli bir 
+                    kkangpae ve uyuşturucu baronu için kandırılarak uyuşturucu kuryesi olarak çalıştırılır . Lucy, Bay Jang'a çok değerli 
+                    bir sentetik ilaç olan dört paket CPH4 içeren bir evrak çantası verir.
+                    Richard'ın vurulup öldürüldüğüne tanık olduktan sonra, yakalanır ve uyuşturucuyu Avrupa'ya nakletmek için karnına zorla 
+                    bir torba uyuşturucu dikilir . Esaret altındayken midesine tekme atılır, torba kırılır ve vücuduna büyük miktarda ilaç salınır. 
+                    Telepati , telekinezi , zihinsel zaman yolculuğu ve acı hissetmeme gibi giderek artan fiziksel ve zihinsel yetenekler kazanır . 
+                    Aynı zamanda hem acımasız hem de duygusuz olur. Yeni yeteneklerini kullanarak, onu esir tutanları öldürür ve kaçar.
+                    Lucy , karnındaki uyuşturucu torbasını çıkarmak için yakındaki Tri-Service General Hospital'a gider . Ameliyat eden doktor, 
+                    doğal CPH4'ün hamile kadınlar tarafından hamileliğin altıncı haftasında fetüslere gelişmek için enerji sağlamak için küçük 
+                    miktarlarda üretildiğini söyledi . Artan fiziksel ve zihinsel yetenekler geliştiren Lucy, Bay Jang'ın oteline döner, korumalarını 
+                    öldürür, ona saldırır ve telepatik olarak beyninden kalan üç uyuşturucu katırının yerlerini çıkarır.
+                    Lucy durumunu araştırmaya başlar ve araştırması onu kurtarmanın anahtarı olabilecek bilim adamı Samuel Norman ile iletişime geçer. 
+                    Lucy, Norman ile konuştuktan (ve gelişmiş yeteneklerinin kanıtını sağladıktan) sonra Paris'e uçar ve ilacın kalan üç paketini bulmasına 
+                    yardım etmek için yerel polis kaptanı Pierre Del Rio ile iletişime geçer. Uçuş sırasında, hücreleri bir yudum şampanya tüketmekten
+                    dengesizleştiği için parçalanmaya başlar. Parçalanmasını önlemek için Lucy daha fazla ilaç alıyor. Del Rio'nun yardımıyla Lucy, 
+                    ilaçların geri kalanını kurtarabilir. Norman ve meslektaşlarıyla tanışarak, bildiği her şeyi onlarla paylaşmayı kabul eder.
+                    Profesörün laboratuvarında Lucy, zamanın ve yaşamın doğasını ve insanların insanlığının algılarını nasıl çarpıttığını tartışıyor. 
+                    Onun ısrarı üzerine, kalan üç CPH4 torbasının içeriği intravenöz olarak enjekte edildi. Vücudu, laboratuvardaki bilgisayarlar ve 
+                    diğer elektronik nesnelerin üzerine yayılmaya başlayan siyah bir maddeye dönüşür ve hepsini yeni nesil bir süper bilgisayara dönüştürür . 
+                    Zihinsel olarak geçmişe bir uzay-zaman yolculuğuna başlar ve sonunda insanlığın keşfedilen en eski atası Lucy'ye ulaşır . Australopithecus 
+                    Lucy ve iki dokunuşlu parmak uçlarıyla sessiz bir anı paylaşıyor , ardından zamanın başlangıcına kadar gidiyor ve Büyük Patlama'ya tanık oluyor.
+                    Bu arada, Jang laboratuvara girer ve Lucy'nin kafasına bir silah doğrultur. Ateş eder, ancak o noktada Lucy beyin kapasitesinin %100'üne ulaşır ve 
+                    uzay-zaman sürekliliğine geçerek derhal ortadan kaybolur . Geride sadece kıyafetleri ve siyah süper bilgisayarı kalmıştır.
+                    Del Rio girer ve Jang'ı ölümcül bir şekilde vurur. Norman, süper bilgisayar tarafından sunulan siyah bir flash sürücü alır ve
+                    ardından o da parçalanır. Del Rio, Norman'a Lucy'nin nerede olduğunu sorar, hemen ardından Del Rio'nun cep telefonu çalar ve 
+                    bir metin mesajı görür: "Ben her yerdeyim." Lucy'nin "Hayat bize bir milyar yıl önce verildi. Şimdi onunla ne yapacağını biliyorsun" 
+                    diyen sesi duyulur.
+                </p3>
+
+                <p4 class="card-text"><small class="text-muted">2004</small></p4>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+
+    <div class="card mb-3 bg-black" >
+    <div class="row g-0 mt-2" id="box2">
+
+            <div class="col-md-5">
+                <img id="pic" src="assets/notebook.jpg" class="img-fluid rounded-start" alt="notebook">
+            </div>
+            
+
+            <div class="col-md-7">
+                <div id="text"  class="card-body card-body">
+                    <h5 class="card-title">NOTEBOOK <br><br></h5>
+                    <p3 class="card-text " >The Notebook , Nicholas Sparks'ın 1996 tarihli aynı adlı romanından uyarlanan, senaryosunu JeremyLeven 
+                        ve Jan Sardi'nin yazdığı, Nick Cassavetes'in yönettiği2004 Amerikan romantik drama filmi . Film, 1940'larda aşık olan 
+                        genç bir çift olarak Ryan Gosling ve Rachel McAdams'ı canlandırıyor. Hikayeleri günümüzde yaşlı bir adam 
+                        ( James Garner tarafından canlandırılıyor ) tarafından bir defterden okunuyor ve hikayeyi bir huzurevi sakinine
+                        (yönetmen Cassavetes'in annesi Gena Rowlands tarafından canlandırılıyor) anlatıyor.
+                        <br><br>
+                        Defter genellikle karışık eleştiriler aldı, ancak gişede iyi performans gösterdi ve sekiz 
+                        Teen Choice Ödülü, bir Uydu Ödülü ve bir MTV Film Ödülü kazanarak bir dizi ödül adaylığı aldı. 
+                        Film, uyuyan bir hit oldu ve ardından bir kült kazandı .11 Kasım 2012'de ABC Family , 
+                        silinen sahnelerin orijinal hikayeye geri eklendiği genişletilmiş bir versiyonunu yayınladı. 
+                        <br><br>
+                        Günümüz bakımevinde yaşlı bir adam olan Duke, defterinden bir hasta arkadaşına romantik bir hikaye okur.
+                        1940'ta, Güney Karolina'daki Seabrook Adası'ndaki bir karnavalda, zavallı kereste fabrikası işçisi Noah Calhoun, 
+                        yazı ailesiyle birlikte kasabada geçiren 17 yaşındaki mirasçı Allison "Allie" Hamilton'u görür. Onu takip eder ve 
+                        bir yaz romantizmine başlarlar. Bir gece, Allie Noah'ın evine gider ve ondan hemen hoşlanan ve onu kendi kanatları 
+                        altına alan babası Frank Calhoun ile tanışır. Birkaç gün sonra Noah, ailesi John ve Anne Hamilton tarafından Allie'nin 
+                        evine davet edilir, ancak Frank'in aksine Noah'tan etkilenmezler. O akşam, Noah onu satın alıp onlar için restore etmeyi 
+                        planladığı terk edilmiş Windsor Çiftliği'ne götürür. Oradayken, Allie Noah'dan ilk kez onunla sevişmesini ister, ancak daha 
+                        sonra gerginleşir ve başıboş kalır. Noah'ın arkadaşı Fin tarafından kısa bir süre sonra Allie'nin ebeveynlerinin polisin onu 
+                        aramaya gittiği haberiyle kesintiye uğrarlar.
+                        Allie ve Noah, ailesinin konağına döndüklerinde, Allie'nin ebeveynleri, özellikle annesi Anne, 
+                        ilişkiyi onaylamadıklarını açıkça belirtir ve onu görmesini yasaklar. Allie'nin annesinin hakaretlerine kulak misafiri olan 
+                        Noah, dışarı çıkar ve Allie onun peşinden gider. Bir tartışma başlar ve Allie Noah'dan ayrılır, ancak Noah hemen pişman olur.
+                        Ertesi sabah Anne, ailenin o gün Charleston'a eve döndüğünü duyurur . Allie, Noah'ı işyerinde bulmaya çalışır ama başarısız olur,
+                        bu yüzden Fin'den onu sevdiğini söylemesini ister. Noah, Allie'nin evine koşar ama kapıları kilitli bulur.
+                        Noah, Allie'ye bir yıl boyunca her gün bir mektup yazar, ancak Allie'nin annesi onları yakalar. 365 mektuptan sonra Noah yazmayı
+                        bırakır. Fin'in savaşta öldürüldüğü II. Dünya Savaşı'nda savaşmak için Fin'le birlikte askere gider . Allie, yaralı askerler hastanesinde 
+                        hemşire yardımcısı olarak gönüllü olur ve burada eski Güney parasından gelen genç bir avukat olan Kaptan Lon Hammond Jr. ile tanışır . 
+                        Birkaç yıl sonra, ikisi Allie'nin ebeveynlerini memnun edecek şekilde nişanlanır.
+                        Noah savaştan döner ve babasının evini sattığını öğrenir, böylece Noah Windsor Plantation'ı satın alabilir. Evi onarırsa, Allie'nin 
+                        ona geri döneceğine kendini ikna eder. Allie gelinliğini giydirirken, bir gazetede Noah'ın tamamladığı ev hakkında bir haber görür. 
+                        Bayılıyor.
+                        Allie, Noah için hatıralar ve çözülmemiş duygularla boğulmuş ve Lon'dan düğünden önce bir geziye çıkmak için izin ister. Noah'ı
+                        hayallerindeki evde yaşarken bulmak için Seabrook'a döner. İkili, ilişkilerini yeniden alevlendirir ve tamamlar. Birkaç gün sonra, 
+                        Allie'nin annesi, Lon'un onu Seabrook'a kadar takip ettiği konusunda Allie'yi uyarmak için Noah'ın kapısının önünde belirir. Ayrıca, 
+                        kızı gibi, bir zamanlar alt sınıftan bir genç adamı sevdiğini ve hala onu ve hayatlarının nasıl farklı olabileceğini düşündüğünü ortaya 
+                        koyuyor. Nuh'un yazdığı mektupları Allie'ye verir. Allie'nin doğru seçimi yapmasını umduğunu söyler.
+                        Noah ile duygusal bir tartışmanın ardından Allie, otele geri dönmek ve Lon'a sadakatsizliğini itiraf etmek için zor bir seçim yapar. 
+                        Lon onu hala sevdiğini ve onu geri istediğini söylüyor ama Noah'a dönmeye karar veriyor.
+                        Şimdiki zamanda, hikayeyi dinleyen yaşlı kadının, artık bunama hastalığına yakalanmış olan Allie olduğu ve aklını karıştırmamak için 
+                        Duke'e giden Noah'ın şimdi kocası olduğu ortaya çıkıyor. Hastalığının ilk aşamalarında, Allie, aşklarını ve birlikte yaşamlarını 
+                        detaylandıran bir günlük yazmıştı, böylece hatırlamasına yardımcı olmak için ona okuyabiliyordu. Bir gün not defterini okurken, 
+                        onu kısaca tanır. Tekrar unutmadan önce ne kadar zamanları olduğunu soruyor ve Duke ona beş dakikadan fazla olmadığını söylüyor."
+                        Seni Göreceğim " adlı şarkılarıyla dans ediyorlar .
+                        Allie hızla nükseder ve panikler ve tıbbi personel onu sakinleştirmeli. Duke kalp krizi geçirir ve hastaneye kaldırılır ve Allie 
+                        aynı hastanede bir bunama koğuşuna gönderilir. İyileştikten sonra ve içeri alınmamasına rağmen, Duke gece Allie'nin odasını ziyaret eder ve onu tekrar hatırlar. Öpüşürler, el ele tutuşurlar ve uykuya dalarlar. Sabah, bir hemşire ikisini de ölü bulur, elleri hala birbirine kenetlenmiş.
+                    </p3>
+
+                    <p4 class="card-text"><small class="text-muted">2004</small></p4>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <div class="card mb-3  bg-black">
+    <div class="row g-0 mt-2" id="box3">
+
+        <div class="col-md-5">
+            <img id="pic" src="assets/The_Pianist_Poster.jpg" class="img-fluid rounded-start" alt="pianist">
+        </div>
+        
+
+        <div class="col-md-7">
+            <div id="text"  class="card-body card-body">
+                <h5 class="card-title">PİANİST<br><br></h5>
+                <p3 class="card-text">Piyanist, ya da orijinal ismiyle The Pianist, Roman Polanski'nin 2002 yapımı
+                     uzun metrajlı dramatik ve biyografik savaş filmidir. Fransız–İngiliz–Alman–Polonyalı ortak yapımı 
+                     olan film, gerçek bir hikâyeyi anlatmaktadır. 1930'lar Polonya'sının başarılı piyanist ve bestecilerinden 
+                     biri olan Yahudi kökenli Władek Szpilman'ın, Varşova Ayaklanması'nın bastırılmasından hemen sonra Wehrmacht
+                     subayı Wilm Hosenfeld'ın önemli yardımları sayesinde nasıl hayatta kaldığını anlattığı Śmierć Miasta isimli 
+                     otobiyografisine dayanmaktadır.
+                     Piyanist, yazar Ronald Harwood tarafından uyarlandı ve uluslararası bir oyuncu kadrosuyla çekildi. Başrolü
+                      Adrien Brody (Szpilman için) ve Thomas Kretschmann (Hosenfeld için) üstlendi. Ardından 24 Mayıs 2002'deki 
+                      2002 Cannes Film Festivali'nde ön-gösterime sunuldu ve burada Altın Palmiye kazandı. Bununla birlikte aynı 
+                      senenin Eylül'ünde geniş çapta vizyona girdi. Polanski'nin 2002'deki galasından sonra film, Amerika Birleşik 
+                      Devletleri'nde çoğunlukla olumlu eleştiriler alırken, Fransa ve Polonya'da tartışmalara yol açacak bazı olumsuz 
+                      eleştiriler aldı. Bazı eleştirmenler filmdeki akademik tarzı ve Holokost'un etkilerini göstermedeki kısıtlaması 
+                      gerekçesiyle eleştirirken, diğerleri Holokost'a nesnel ve melodramatik olmayan yaklaşımı gerekçesiyle filmi övdü.
+                     75'inci Akademi Ödülleri'nde En İyi Yönetmen (Polanski), En İyi Uyarlanmış Senaryo (Harwood) ve En İyi Aktör (Brody)
+                     dallarında ödüller kazanmış Piyanist, En İyi Film ödülü dahil olmak üzere toplam dört daldaysa aday gösterildi. 2016'da 
+                     BBC'nin 21'inci Yüzyılın En İyi 100 Filmi listesine dahil edildi. Piyanist aynı zamanda ticari bir başarı da yakaladı ve 
+                     35 milyon dolarlık bir bütçeyle dünya çapında 120 milyon doların üzerinde hasılat elde etti. "Müzik tutkusuydu. Hayatta 
+                     kalmak başyapıtıydı." (Music was his passion. Survival was his masterpiece.) ise filmin sloganıydı.
+                </p3>
+
+                <p4 class="card-text"><small class="text-muted">2002</small></p4>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+    <div id="series">
+        <div class="carousel slide" data-bs-ride="carousel" id="slider1">
+
+            <ol class="carousel-indicators">
+                <li data-bs-target="#slider1" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#slider1" data-bs-slide-to="1"></li>
+                <li data-bs-target="#slider1" data-bs-slide-to="2"></li>
+                <li data-bs-target="#slider1" data-bs-slide-to="3"></li>
+                <li data-bs-target="#slider1" data-bs-slide-to="4"></li>
+                <li data-bs-target="#slider1" data-bs-slide-to="5"></li>
+            </ol>
+
+        <div class="carousel-inner" id="series">
+            <div class="carousel-item active">
+                <img src="assets/haunting.jpg" id="horror1" class="d-block w-100 " alt="pictures1" >
+                <a href="#haunting"></a>
+                    <div class="carousel-caption">
+                        <h6>Korku</h6>
+                    </div>
+            </div>
+
+            <div class="carousel-item active">
+                <img src="assets/The_Haunting_Bly_Malikânesi.jpg" id="horror1" class="d-block w-100 " alt="pictures2">
+                <a href="#bly"></a>
+                    <div class="carousel-caption">
+                        <h6>Korku</h6>
+                    </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/emily.jpg" id="romantic1" class="d-block w-100 " alt="pictures3">
+                <a href="#emily"></a>
+                <div class="carousel-caption">
+                    <h6>Romantik</h6>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/bridgerton.jpg" id="romantic1" class="d-block w-100 " alt="pictures4">
+                <a href="#bridgerton"></a>
+                <div class="carousel-caption">
+                    <h6>Romantik</h6>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/dark.jpg" id="sciencefiction2" class="d-block w-100 " alt="pictures5">
+                <a href="#dark"></a>
+                <div class="carousel-caption">
+                    <h6>Bilim-Kurgu</h6>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/intothenight.jpg" id="sciencefiction2" class="d-block w-100 " alt="pictures6">
+                <!-- <a href="#intothenight"></a> -->
+                <a href="#intothenight"></a>
+                <div class="carousel-caption">
+                    <h6>Bilim-Kurgu</h6>
+                </div>
+            </div>
+
+
+
+            <a href="#slider1" class="carousel-control-prev" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#slider1" class="carousel-control-next" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+      
+
+    </div>
+
+
+        <div id="horror" class="row mb-5 row-cols-1 row-cols-md-2 g-lg-5">
+
+
+            <div class="col" id="haunting">
+                <div class="card h-100">
+                  <img src="assets/haunting.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="https://www.netflix.com/watch/80189222?trackId=255824129" target="_blank" style="color: black;">The Haunting of Hill House</a></h5>
+                    <p class="card-text">1992 yazında Hugh ve Olivia Crain ve beş çocukları -Steven, Shirley,
+                       Theodora (Theo), Luke ve Eleanor (Nell)- konağı satmak ve kendi evlerini inşa etmek için 
+                       yenilemek üzere Hill House'a taşınırlar. , Olivia tarafından tasarlandı. Ancak beklenmedik 
+                       onarımlar nedeniyle daha uzun süre kalmak zorunda kalırlar ve artan paranormal olaylar yaşamaya 
+                       başlarlar, bu da trajik bir kayba ve ailenin evden kaçmasına neden olur. <br><br> Yirmi altı yıl sonra, 
+                       Crain kardeşler ve ayrı oldukları babaları, başlarına gelen bir trajedinin ardından yeniden bir 
+                       araya gelirler ve Hill House'daki zamanlarının her birini nasıl etkilediğiyle yüzleşmek zorunda kalırlar.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">1 sezon 10 bölümden oluşuyor.</small>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col" id="bly">
+              <div class="card h-100">
+                <img src="assets/The_Haunting_Bly_Malikânesi.jpg" class="card-img-top" >
+                <div class="card-body">
+                  <h5 class="card-title"><a href="https://www.netflix.com/watch/80227423?trackId=255824129&tctx=-97%2C-97%2C%2C%2C%2C%2C%2C%2C" target="_blank" style="color: black;">The Haunting: Bly Malikânesi</a></h5>
+                  <p class="card-text">The Haunting: Bly Malikânesi (İngilizce: The Haunting of Bly Manor), 
+                    bir Amerikan yapımı doğaüstü korku-dram dizisidir. Netflix yapımı bu dizi The Haunting 
+                    of Hill House'un antoloji türündeki devam halkasıdır. <br><br>
+                    Hikaye, yeğenine ve yeğeninin bakımına düştükten sonra aile kır evinde yeğenine bakmak
+                    için bir adam tarafından kiralanan genç bir au çifti anlatıyor. Bly malikanesine vardığında, 
+                    binaya musallat olmaya devam eden hayaletler görmeye başlar. 
+                 </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">1 sezon 9 bölümden oluşuyor.</small>
+                </div>
+              </div>
+            </div>
+
+
+
+    </div>
+    
+
+
+    <div id="romantic">
+
+        <div class="row mb-5 row-cols-1 row-cols-md-2 g-lg-5">
+
+            <div class="col" id="emily">
+              <div class="card h-100">
+                <img src="assets/emily.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="https://www.netflix.com/watch/81289281" target="_blank" style="color: black;">Emily in Paris</a></h5>
+                  <p class="card-text">Emily in Paris , yirmili yaşlarının sonlarında, Chicago'dan beklenmedik bir iş fırsatı için Paris'e taşınan,
+                    pazarlama alanında yüksek lisans derecesine sahip, üniversite mezunu bir Amerikalı olan Emily Cooper'ı takip ediyor. Saygın
+                    bir Fransız pazarlama firmasına Amerikan bakış açısı getirmekle görevlendirildi. Kariyeri, yeni arkadaşlıklar ve aktif aşk hayatıyla 
+                    uğraşırken Paris'teki yaşamın zorluklarına uyum sağlarken kültürler çatışır.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">2 sezon 20 bölümden oluşuyor.</small>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col" id="bridgerton">
+              <div class="card h-100">
+                <img src="assets/bridgerton.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="https://www.netflix.com/watch/80232920?trackId=200257859" target="_blank" style="color: black;">Bridgerton</a></h5>
+                  <p class="card-text">Bridgerton ailesinden birbirine sıkı sıkıya bağlı 
+                    sekiz kardeş, Londra yüksek sosyetesinde aşkı ve mutluluğu arıyor. 
+                    Julia Quinn'in çok satan romanlarından esinlendi. Canınız neyi isterse
+                    izleyin. Shonda Rhimes ("Grey's Anatomy") imzalı bu Emmy adayı drama Julia Quinn'in çok 
+                    satan aşk romanları serisinden uyarlandı.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">2 sezon 16 bölümden oluşuyor.</small>
+                </div>
+              </div>
+            </div>
+    </div>
+    </div>
+
+    <div id="sciencefiction">
+
+        <div class="row mb-5 row-cols-1 row-cols-md-2 g-lg-5">
+
+            <div class="col" id="dark">
+              <div class="card h-100">
+                <img src="assets/dark.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="https://www.netflix.com/watch/80114790" target="_blank" style="color: black;">Dark</a></h5>
+                  <p class="card-text">Almanya'nın Winden kasabasından [13] kaybolmaya başlayan çocuklar , 
+                    orada yaşayan dört ailenin parçalanmış ilişkilerini, çifte hayatlarını ve karanlık geçmişlerini 
+                    gün ışığına çıkarır ve dört kuşağa yayılan bir gizemi ortaya çıkarır. <br><br>
+                    İlk sezon 2019'da başlıyor, ancak daha sonra şovun merkezi ailelerinin üyeleri yerel 
+                    nükleer santralin altındaki mağara sistemindeki bir solucan deliğinden haberdar olduklarında zaman
+                    yolculuğu yoluyla 1986 ve 1953'ü içerecek şekilde büyüyor. İlk sezonda Kahnwald, Nielsen, Doppler 
+                    ve Tiedemann aileleriyle ilgili sırlar açığa çıkıyor ve aralarındaki bağ açığa çıktıkça hayatları 
+                    darmadağın oluyor. Komplo, kayıp çocukları ve kasabanın tarihini ve vatandaşlarını içeriyor.
+                    İkinci sezon, birinci sezon finalinden birkaç ay sonra sırasıyla 2020, 1987 ve 1954'te iç içe ailelerin
+                    kayıp sevdikleriyle yeniden bir araya gelme girişimlerine devam ediyor. Ek hikaye hatları 2053 ve 1921'de 
+                    belirlendi. İkinci sezon, Winden halkının ve dünyanın nihai kaderi için devam eden savaşta büyük bir grup olan 
+                    Sic Mundus Creatus Est'i tanıtıyor. Sezon kıyamet için geri sayım yapıyor .                   
+                    Üçüncü sezon, 2020'deki kıyametin ardından dört aileyi zaman içinde takip ediyor. İlkine bağlı paralel bir dünya sunuyor. 
+                    Üçüncü sezon, birinci dünyada 1954, 1987, 2020 ve 2053 hikayelerini devam ettirirken, aynı zamanda hizipler her dünya için 
+                    kendi arzularını ilerlettiği için ikinci dünyaya yeni bir 1888 hikayesi ve 2019 ve 2052 ekliyor. Sezon aynı zamanda tüm bu
+                    yıllar arasındaki ana olayları sergileyerek sezonun olaylarını sürdürürken aynı zamanda ilk iki sezonun olayları için arka plan görevi görür.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">3 sezon 26 bölümden oluşuyor.</small>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col" id="intothenight">
+              <div class="card h-100">
+                <img src="assets/intothenight.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="https://www.netflix.com/watch/81069324?trackId=200257859" target="_blank" style="color: black;">Into the Night</a></h5>   
+                   <p class="card-text">İlk sezon, Brüksel'den kırmızı göz uçuşu yapan bir uçakta kaçırılan bir grup insanı konu alıyor . Korsan Terenzio (Cassetti), 
+                    bir İtalyan NATO askeridir. Ticari uçağa biner ve erken bir kalkış talep eder.Uçaktaki bir avuç insan şimdi güneş ışığına maruz kalmanın neden 
+                    olduğu ölümcül küresel bir olaydan kurtulanlardan bazıları.Uçak, gündüz saatlerinde tüm canlı organizmaları öldüren bu felaketten sağ çıkmak için batıya yönelir. 
+                    Pilot Mathieu ( Capelluto ) ve bir yolcu olan Sylvie ( Pauline Étienne ) liderliğindeki grup , güneşi arkalarında tutmak için birlikte çalışmalıdır.Grup, bir yeraltı askeri
+                     sığınağına ulaşma yarışında yakıt sıkıntısı, ışınlanmış yiyecekler, gizli gündemler ve diğer sorunlarla uğraşmalıdır. <br><br>
+                    İkinci sezonda, hayatta kalanlar, güneşin ölümcül ışınlarından sığınacakları bir NATO sığınağına giden yolu güvence altına alırlar. Sığınaktaki askeri üyelerle birlikte 
+                    hayatta kalma arayışlarına devam ederek, büyüyen bir çatışmayı yönetmeye ve azalan kaynak arzına bir çözüm bulmaya çalışırlar.
+                </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">2 sezon 16 bölümden oluşuyor.</small>
+                </div>
+              </div>
+            </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" 
+         crossorigin="anonymous"></script>
+</body>
+</html>
